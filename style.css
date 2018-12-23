@@ -6,25 +6,26 @@
 html {
     scroll-behavior: smooth;
 }
+/* Header with menu */
 #logo {
-    max-width: 14vh;
+    max-width: 10vh;
     padding-top: 1vh;
     padding-left: 1vw;
     opacity: 0.7;
 }
 #header {
-    background-image: linear-gradient(to right, rgb(110, 140, 200) 10%,cadetblue 50%);
-    height: 16vh;
+    background-image: linear-gradient(to right, rgb(95, 130, 160) 10%,cadetblue 50%);
+    height: 12vh;
 }
 nav {
     position: relative;
     float: right;
-    margin-right: 5vw;
+    margin-right: 15px;
     margin-top: 4vh;
 }
 nav button{
     background-color: cadetblue;
-    font-size: 8vh;
+    font-size: 5vh;
     outline: none;
     position: relative;
     padding: 0vh 3vw;
@@ -47,27 +48,33 @@ nav:hover #ddContent {
 #ddContent a {
     text-decoration: none;
     display: block;
-    width: 160px;
-    background-color: lightgoldenrodyellow;
+    width: 140px;
+    background-color: rgb(54, 106, 107);
     margin-top: 5px;
     padding: 5px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: cornflowerblue;
+    color: beige;
     opacity: 0.9;
     height: 20px;
     animation-name: menu;
     animation-duration: 0.7s;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px black;
+    border-radius: 5px;
 }
 #ddContent a:hover {
-    color: darkslategray;
+    text-shadow: none;
+    transition: all 0.5s;
+    text-shadow: 1px 1px 2px black;
 }
+/* Open page display */
 #sectionTop {
-    height: 70vh;
+    height: 76vh;
 }
 #mainDisplay {
-    height: 35vh;
+    height: 38vh;
     background-image: url(img/web.jpg);
-    background-size: 180vw;
+    background-size: 220vw;
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -76,7 +83,7 @@ nav:hover #ddContent {
     background-color: beige;
     font-size: 0.8em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 25vh;
+    height: 28vh;
     opacity: 0.7;
     color: darkblue;
     font-weight: 900;
@@ -85,7 +92,7 @@ nav:hover #ddContent {
     white-space: nowrap;
 }
 #secDisplay {
-    height: 35vh;
+    height: 38vh;
     background-image: url(img/port.jpg);
     background-size: 180vw;
     background-position-x: center;
@@ -114,46 +121,48 @@ nav:hover #ddContent {
     animation-duration: 2s; 
 }
 #sectionFoot {
-    height: 14vh;
+    height: 12vh;
 }
 #footDisplay {
     background-image: linear-gradient(cadetblue 30%, lightblue);
-    height: 14vh;
+    height: 12vh;
     text-align: center;
     padding: 2vh 5vw;
 }
 @keyframes arrow {
-    0% {color: black; opacity: 1;}
-    20% {color: darkslategray; opacity: 1;}
+    0% {color: darkslategray; opacity: 1;}
+    79% {color: darkslategray; opacity: 1;}
+    80% {color: black; opacity: 1;}
     100% {color: darkslategray; opacity: 1;}
 }
 #footDisplay a {
-    font-size: 9vh;
+    font-size: 7vh;
     color: darkslategray;
     animation-name: arrow;
-    animation-duration: 5s;
-    animation-delay: 2.5s;
-    animation-iteration-count: 3;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
 }
 #footDisplay a:hover {
     color: black;
-    opacity: 0.65;
+    opacity: 0.9;
 }
+/* Main content */
 main {
-    border-top: 3px solid cadetblue;
-    border-bottom: 3px solid cadetblue;
-    padding-bottom: 20px;
+    border-top: 3px solid rgb(55, 100, 100);
+    border-bottom: 3px solid rgb(55, 100, 100);
     background-color: aliceblue;
+    padding: 0 5vw 20px 5vw;
 }
 .favi {
     text-align: center;
-    padding: 2px 20vw;
+    padding: 2px 10vw;
     color: darkslategray;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 main section i {
     font-size: 80px;
-    padding: 35px 10vw 10px 10vw;
+    padding: 35px 10vw 15px 10vw;
     color: cadetblue;
     text-shadow: 2px 2px 5px darkslategray;
 }
@@ -164,16 +173,97 @@ main section p {
 main section h3 {
     margin-bottom: 10px;
 }
+/* Footer */
 footer {
-    background-image: linear-gradient(to right, lightblue, rgb(110, 140, 200) 70%);
+    background-image: linear-gradient(to right, lightblue, rgb(95, 130, 160) 70%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
-    text-align: center;
-    padding-bottom: 10px;
+    text-align: left;
+    padding-bottom: 8px;
+    padding-left: 2vw;
 }
 footer #footContact {
     text-align: right;
     padding-right: 2vw;
     padding-bottom: 1vh;
+}
+
+/* Lanscape orientation of "iPhone" */
+
+@media (max-width: 830px) and (orientation: landscape){
+    /* Header with menu */
+    nav {
+        position: absolute;
+        margin-top: -30px;
+        text-align: right;
+        width: 100vw;
+        height: 10px;
+    }
+    nav button{
+        display: none;
+    }
+@keyframes menu2 {
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    #ddContent {
+        position: relative;
+        display: inline;
+        margin-left: 0px;
+        margin-right: 5vw;
+        animation: menu2 3s;
+    }
+    #ddContent a {
+        display: inline;
+        background: none;
+        font-size: 16px;
+        padding: 5px 7px;
+    }
+    /* Open page display */
+    .textDisplay {
+        font-weight: 700;
+    }
+    #mainDisplay {
+        background-size: 100vw;
+    }
+    #secDisplay {
+        background-size: 100vw;
+    }
+    @keyframes textes1 {
+        0% {margin-right: 100%; padding: 5vh 0vw;}
+        100% {margin-right: 60%; padding: 5vh 5vw;}
+    }
+    @keyframes textes2 {
+        0% {margin-left: 100%; padding: 5vh 0vw;}
+        50% {margin-left: 100%; padding: 5vh 0vw;}
+        100% {margin-left: 60%; padding: 5vh 5vw;}
+    }
+    #textD1 {
+        padding: 5vh 5vw;
+    }
+    #textD2 {
+        padding: 5vh 5vw;
+    }
+    /* Main content */
+    main {
+        column-count: 3;
+        column-gap: 3vw;
+    }
+    .favi {
+        text-align: center;
+        padding: 2px 1vw;
+    }
+    main section i {
+        font-size: 70px;
+        padding: 35px 1vw 15px 1vw;
+    }
+    main section p {
+        text-indent: 15px;
+    }
+    main section h3 {
+        margin-bottom: 10px;
+        font-size: smaller;
+    }
 }
