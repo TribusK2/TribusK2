@@ -115,7 +115,7 @@ nav:hover #ddContent {
 @keyframes textes2 {
     0% {margin-left: 100%; padding: 5vh 0vw;}
     50% {margin-left: 100%; padding: 5vh 0vw;}
-    100% {margin-left: 60%; padding: 5vh 8vw;}
+    100% {margin-left: 60%; padding: 5vh 5vw;}
 }
 #textD1 {
     margin-right: 60%;
@@ -125,7 +125,7 @@ nav:hover #ddContent {
 }
 #textD2 {
     margin-left: 60%;
-    padding: 5vh 8vw;
+    padding: 5vh 5vw;
     animation-name: textes2;
     animation-duration: 2s; 
 }
@@ -134,7 +134,7 @@ nav:hover #ddContent {
 }
 #footDisplay {
     background-image: linear-gradient(cadetblue 30%, lightblue);
-    height: 12vh;
+    height: 10vh;
     text-align: center;
     padding-top: 2vh;
 }
@@ -200,14 +200,190 @@ footer #footContact {
     padding-right: 2vw;
     padding-bottom: 1vh;
 }
+footer a {
+    text-decoration: none;
+    color: black;
+}
 
-                    /* Lanscape orientation of "iPhone" */
+                    /* Lanscape orientation of Mobile */
 
-@media (min-width: 460px) and (max-width: 830px) and (orientation: landscape){
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape){
+    
     /* Header with menu */
+    #header {
+        height: 14vh;
+    }
+    #logo {
+        max-width: 12vh;
+    }
     nav {
         position: absolute;
-        margin-top: -30px;
+        margin-top: -25px;
+        text-align: right;
+        width: 100vw;
+        height: 10px;
+    }
+    nav button{
+        display: none;
+    }
+@keyframes menu2 {
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    #ddContent {
+        position: relative;
+        display: inline;
+        margin-left: 0px;
+        margin-right: 5vw;
+        animation: menu2 3s;
+    }
+    #ddContent a {
+        display: inline;
+        background: none;
+        font-size: 16px;
+        padding: 5px 7px;
+    }
+
+    /* Open page display */
+    #sectionTop {
+        height: 72vh;
+    }
+    .textDisplay {
+        font-weight: 700;
+        font-size: 3vh;
+        line-height: 6vh;
+        height: 26vh;
+    }
+    #mainDisplay {
+        background-size: 100vw;
+        height: 36vh;
+    }
+    #secDisplay {
+        background-size: 100vw;
+        height: 36vh;
+    }
+    #sectionFoot {
+        height: 14vh;
+    }
+    #footDisplay {
+        height: 12vh;
+    }
+    #footDisplay a {
+        font-size: 10vh;
+        padding: 2vh 30vw 1vh 30vw;
+    }
+    
+    /* Main content */
+    main {
+        column-count: 3;
+        column-gap: 3vw;
+    }
+    .favi {
+        text-align: center;
+        padding: 2px 1vw;
+    }
+    main section i {
+        font-size: 70px;
+        padding: 35px 1vw 15px 1vw;
+    }
+    main section p {
+        text-indent: 15px;
+        font-size: 13px;
+    }
+    main section h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+
+                    /* Portrait orientation of Tablet */
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    #header {
+        background-image: linear-gradient(to right, red 10%,cadetblue 50%);
+    }
+    /* Header with menu */
+    #header {
+        height: 10vh;
+    }
+    #logo {
+        max-width: 8vh;
+    }
+    nav {
+        position: absolute;
+        margin-top: -25px;
+        text-align: right;
+        width: 100vw;
+        height: 10px;
+    }
+    nav button{
+        display: none;
+    }
+@keyframes menu2 {
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    #ddContent {
+        position: relative;
+        display: inline;
+        margin-left: 0px;
+        margin-right: 5vw;
+        animation: menu2 3s;
+    }
+    #ddContent a {
+        display: inline;
+        background: none;
+        font-size: 16px;
+        padding: 5px 7px;
+    }
+    
+    /* Open page display */
+    #sectionTop {
+        height: 80vh;
+    }
+    .textDisplay {
+        font-size: 3vh;
+        line-height: 6vh;
+        height: 30vh;
+    }
+    #mainDisplay {
+        background-size: 160vw;
+        height: 40vh;
+    }
+    #secDisplay {
+        background-size: 140vw;
+        height: 40vh;
+    }
+    #sectionFoot {
+        height: 10vh;
+    }
+    #footDisplay {
+        height: 8vh;
+    }
+    #footDisplay a {
+        font-size: 6vh;
+        padding: 2vh 30vw 1vh 30vw;
+    }
+}
+
+                    /* Laptop and landscape orientarion of Tablet*/
+
+@media (min-width: 769px) {
+    #header {
+        background-image: linear-gradient(to right, orange 10%,cadetblue 50%);
+    }
+    /* Header with menu */
+    #header {
+        height: 10vh;
+    }
+    #logo {
+        max-width: 8vh;
+    }
+    nav {
+        position: absolute;
+        margin-top: -25px;
         text-align: right;
         width: 100vw;
         height: 10px;
@@ -234,51 +410,31 @@ footer #footContact {
         padding: 5px 7px;
     }
     /* Open page display */
+    #sectionTop {
+        height: 80vh;
+    }
     .textDisplay {
-        font-weight: 700;
-        font-size: 4vh;
-        line-height: 7vh;
+        font-size: 3vh;
+        line-height: 6vh;
+        height: 30vh;
     }
     #mainDisplay {
-        background-size: 100vw;
+        background-size: 160vw;
+        height: 40vh;
     }
     #secDisplay {
-        background-size: 100vw;
+        background-size: 140vw;
+        height: 40vh;
     }
-    @keyframes textes1 {
-        0% {margin-right: 100%; padding: 5vh 0vw;}
-        100% {margin-right: 60%; padding: 5vh 5vw;}
+    #sectionFoot {
+        height: 10vh;
     }
-    @keyframes textes2 {
-        0% {margin-left: 100%; padding: 5vh 0vw;}
-        50% {margin-left: 100%; padding: 5vh 0vw;}
-        100% {margin-left: 60%; padding: 5vh 5vw;}
+    #footDisplay {
+        height: 8vh;
     }
-    #textD1 {
-        padding: 5vh 5vw;
-    }
-    #textD2 {
-        padding: 5vh 5vw;
-    }
-    /* Main content */
-    main {
-        column-count: 3;
-        column-gap: 3vw;
-    }
-    .favi {
-        text-align: center;
-        padding: 2px 1vw;
-    }
-    main section i {
-        font-size: 70px;
-        padding: 35px 1vw 15px 1vw;
-    }
-    main section p {
-        text-indent: 15px;
-        font-size: 13px;
-    }
-    main section h3 {
-        margin-bottom: 10px;
-        font-size: 14px;
+    #footDisplay a {
+        font-size: 6vh;
+        padding: 2vh 30vw 1vh 30vw;
     }
 }
+ 
