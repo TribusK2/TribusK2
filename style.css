@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Header with menu */
 #logo {
@@ -52,7 +53,6 @@ nav:hover #ddContent {
     background-color: rgb(54, 106, 107);
     margin-top: 5px;
     padding: 5px 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: beige;
     opacity: 0.9;
     height: 20px;
@@ -91,7 +91,6 @@ nav:hover #ddContent {
 .textDisplay {
     background-color: beige;
     font-size: 2vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 28vh;
     opacity: 0.7;
     color: darkblue;
@@ -163,13 +162,12 @@ main {
     border-bottom: 3px solid rgb(55, 100, 100);
     background-color: aliceblue;
     padding: 0 5vw 20px 5vw;
-}
+    }
 .favi {
     text-align: center;
     padding: 2px 10vw;
     color: darkslategray;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    }
 main section i {
     font-size: 80px;
     padding: 35px 10vw 15px 10vw;
@@ -277,11 +275,12 @@ footer a {
     /* Main content */
     main {
         column-count: 3;
-        column-gap: 3vw;
+        display: flex;
     }
     .favi {
         text-align: center;
-        padding: 2px 1vw;
+        padding: 2px 2vw;
+        flex: 1;
     }
     main section i {
         font-size: 70px;
@@ -295,14 +294,17 @@ footer a {
         margin-bottom: 10px;
         font-size: 14px;
     }
+
+    /* Footer */
+    footer {
+        font-size: 11px;
+    }
 }
 
                     /* Portrait orientation of Tablet */
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-    #header {
-        background-image: linear-gradient(to right, red 10%,cadetblue 50%);
-    }
+
     /* Header with menu */
     #header {
         height: 10vh;
@@ -312,7 +314,7 @@ footer a {
     }
     nav {
         position: absolute;
-        margin-top: -25px;
+        margin-top: -28px;
         text-align: right;
         width: 100vw;
         height: 10px;
@@ -371,9 +373,7 @@ footer a {
                     /* Laptop and landscape orientarion of Tablet*/
 
 @media (min-width: 769px) {
-    #header {
-        background-image: linear-gradient(to right, orange 10%,cadetblue 50%);
-    }
+    
     /* Header with menu */
     #header {
         height: 10vh;
@@ -383,7 +383,7 @@ footer a {
     }
     nav {
         position: absolute;
-        margin-top: -25px;
+        margin-top: -30px;
         text-align: right;
         width: 100vw;
         height: 10px;
@@ -406,8 +406,8 @@ footer a {
     #ddContent a {
         display: inline;
         background: none;
-        font-size: 16px;
-        padding: 5px 7px;
+        font-size: 18px;
+        padding: 5px 15px;
     }
     /* Open page display */
     #sectionTop {
@@ -436,5 +436,30 @@ footer a {
         font-size: 6vh;
         padding: 2vh 30vw 1vh 30vw;
     }
+    
+     /* Main content */
+     main {
+        column-count: 3;
+        display: flex;
+    }
+    .favi {
+        text-align: center;
+        padding: 2px 2vw;
+        flex: 1;
+    }
+    main section i {
+        font-size: 70px;
+        padding: 35px 1vw 15px 1vw;
+    }
+    main section p {
+        font-size: 16px;
+    }
+    main section h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 10px;
+    }
 }
- 
