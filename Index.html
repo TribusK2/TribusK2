@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<script>
-        function delay (URL) {
-        setTimeout( function() { window.location = URL }, 1000);
-    }
+<script src="scripts.js">
+        
 </script>
 </head>
 <body>
@@ -21,11 +19,11 @@
             <nav>
                 <button><i id="bars" class="fas fa-bars"></i></button>
                 <div id="ddContent">
-                    <a href="javascript:delay('index.html')">Home</a>
+                    <a href="javascript:delay('index.html')">Start</a>
                     <a href="javascript:delay('#')">O mnie</a>
                     <a href="javascript:delay('#')">Technologia</a>
                     <a href="javascript:delay('#')">Projekty</a>
-                    <a href="javascript:delay('#')">Kontakt</a>
+                    <a href="javascript:delay('contact.html')">Kontakt</a>
                 </div>
             </nav>
         </div>
@@ -65,7 +63,7 @@
     <!-- Footer -->
     <footer>
         <div id="footContact">
-            <a href="#">
+            <a href="contact.html">
                 <p>e-mail: biuro@tribusk2.pl</p>
                 <p>tel: +48 501-528-589</p>
             </a>
