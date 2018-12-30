@@ -110,6 +110,17 @@ nav:hover #ddContent {
     white-space: nowrap;
     padding: 5vh 6vw;
 }
+.textDisplayAbout {
+    background-color: beige;
+    font-size: 3vh;
+    height: 12vh;
+    opacity: 0.7;
+    color: darkblue;
+    font-weight: 900;
+    line-height: 6vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
 #secDisplay {
     height: 38vh;
     background-image: url(img/port.jpg);
@@ -168,6 +179,16 @@ nav:hover #ddContent {
     animation-name: textes1java;
     animation-duration: 3s;
 }
+@keyframes textes2about {
+    0% {margin-left: 100%; padding: 3vh 0vw;}
+    100% {margin-left: 60%; padding: 3vh 5vw;}
+}
+#textD2About {
+    margin-left: 60%;
+    padding: 3vh 5vw;
+    animation-name: textes2about;
+    animation-duration: 3s;
+}
 #sectionFoot {
     height: 12vh;
 }
@@ -203,11 +224,14 @@ main {
     background-color: aliceblue;
     padding: 0 1vw 5vh 1vw;
     }
-.mainContact{
+.mainContact {
     min-height: 60vh;
 }    
-.mainTech{
+.mainTech {
     min-height: 28vh;
+}
+.mainAbout {
+    min-height: 55vh;
 }    
 .favi {
     text-align: center;
@@ -307,6 +331,18 @@ aside .textDisplay {
     background-repeat: no-repeat;
 }
 
+/* Banner on about */
+.asideAbout {
+    height: 18vh;
+}
+#about {
+    height: 18vh;
+    background-image: url(img/book.jpg);
+    background-size: 100vw;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
 
                     /* Lanscape orientation of Mobile */
 
@@ -378,6 +414,9 @@ aside .textDisplay {
     }
     
     /* Main content */
+    main {
+        padding: 0 15vw 5vh 15vw;
+    }
     .mainContact {
         column-count: 3;
         display: flex;
@@ -388,7 +427,6 @@ aside .textDisplay {
     }
     main section i {
         font-size: 8vw;
-        padding: 5vw 10vh 3vw 10vh;
     }
     main section p {
         text-indent: 3vw;
@@ -477,6 +515,14 @@ aside .textDisplay {
         font-size: 6vh;
         padding: 2vh 30vw 1vh 30vw;
     }
+    .mainTech {
+        min-height: 30vh;
+        padding: 0 10vw 5vh 10vw; 
+    }
+    .mainAbout {
+        min-height: 57vh;
+        padding: 0 10vw 5vh 10vw; 
+    }
 }
 
                     /* Laptop and landscape orientarion of Tablet*/
@@ -551,21 +597,29 @@ aside .textDisplay {
         column-count: 3;
         display: flex;
     }
+    .mainContact {
+        padding: 0 15vw 5vh 15vw;
+    }
     .mainTech{
         min-height: 30vh;
+        padding: 0 15vw 5vh 15vw;
+    }
+    .mainAbout {
+        min-height: 57vh;
+        padding: 0 10vw 5vh 10vw;
     }
     .favi {
         flex: 1;
     }
     main section i {
         font-size: 6vw;
-        padding: 2vh 5vw 2vh 5vw;
+        padding-bottom: 3vh;
     }
     main section p {
-        font-size: 1.2vw;
+        font-size: 1.3vw;
     }
     main section h3 {
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
     .center {
         font-size: 1.5vw;
