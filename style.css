@@ -82,7 +82,7 @@ nav:hover #ddContent {
 }
 #mainDisplay {
     height: 38vh;
-    background-image: url(img/web.webp);
+    background-image: url(img/web.jpg);
     background-size: 220vw;
     background-position-x: right;
     background-position-y: top;
@@ -123,7 +123,7 @@ nav:hover #ddContent {
 }
 #secDisplay {
     height: 38vh;
-    background-image: url(img/port.webp);
+    background-image: url(img/port.jpg);
     background-size: 180vw;
     background-position-x: center;
     background-position-y: center;
@@ -297,7 +297,7 @@ footer a {
 }
 #contactDisplay {
     height: 15vh;
-    background-image: url(img/keyboard.webp);
+    background-image: url(img/keyboard.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -310,7 +310,7 @@ aside .textDisplay {
 /* Banners on technology */
 #techHtml {
     height: 15vh;
-    background-image: url(img/html.webp);
+    background-image: url(img/html.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -318,7 +318,7 @@ aside .textDisplay {
 }
 #techCss {
     height: 15vh;
-    background-image: url(img/css.webp);
+    background-image: url(img/css.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -326,7 +326,7 @@ aside .textDisplay {
 }
 #techJava {
     height: 15vh;
-    background-image: url(img/java.webp);
+    background-image: url(img/java.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -339,7 +339,7 @@ aside .textDisplay {
 }
 #about {
     height: 18vh;
-    background-image: url(img/book.webp);
+    background-image: url(img/book.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: top;
@@ -350,7 +350,7 @@ aside .textDisplay {
 
 #projects {
     height: 18vh;
-    background-image: url(img/projekt.webp);
+    background-image: url(img/projekt.jpg);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
