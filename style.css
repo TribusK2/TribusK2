@@ -82,7 +82,7 @@ nav:hover #ddContent {
 }
 #mainDisplay {
     height: 38vh;
-    background-image: url(img/web.jpg);
+    background-image: url(img/web.webp);
     background-size: 220vw;
     background-position-x: right;
     background-position-y: top;
@@ -123,7 +123,7 @@ nav:hover #ddContent {
 }
 #secDisplay {
     height: 38vh;
-    background-image: url(img/port.jpg);
+    background-image: url(img/port.webp);
     background-size: 180vw;
     background-position-x: center;
     background-position-y: center;
@@ -249,7 +249,7 @@ main section p {
     text-indent: 3vh;
     font-size: 2vh;
 }
-main section h3 {
+main section h1 {
     margin-bottom: 1vh;
     font-size: 3vh;
 }
@@ -271,15 +271,17 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 2vh;
-    text-align: left;
     padding-bottom: 1vh;
     padding-left: 2vw;
     height: 8vh;
 }
-footer #footContact {
+#footContact {
     text-align: right;
-    padding-right: 2vw;
-    
+    padding-right: 2vw; 
+}
+#footCopy {
+    text-align: left;
+    padding-right: 20vw;
 }
 footer a {
     text-decoration: none;
@@ -295,7 +297,7 @@ footer a {
 }
 #contactDisplay {
     height: 15vh;
-    background-image: url(img/keyboard.jpg);
+    background-image: url(img/keyboard.webp);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -308,7 +310,7 @@ aside .textDisplay {
 /* Banners on technology */
 #techHtml {
     height: 15vh;
-    background-image: url(img/html.jpg);
+    background-image: url(img/html.webp);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -316,7 +318,7 @@ aside .textDisplay {
 }
 #techCss {
     height: 15vh;
-    background-image: url(img/css.jpg);
+    background-image: url(img/css.webp);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -324,7 +326,7 @@ aside .textDisplay {
 }
 #techJava {
     height: 15vh;
-    background-image: url(img/java.jpg);
+    background-image: url(img/java.webp);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: center;
@@ -337,10 +339,21 @@ aside .textDisplay {
 }
 #about {
     height: 18vh;
-    background-image: url(img/book.jpg);
+    background-image: url(img/book.webp);
     background-size: 100vw;
     background-position-x: center;
     background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+/* Banner on projects */
+
+#projects {
+    height: 18vh;
+    background-image: url(img/projekt.webp);
+    background-size: 100vw;
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
 }
 
@@ -432,7 +445,7 @@ aside .textDisplay {
         text-indent: 3vw;
         font-size: 2vw;
     }
-    main section h3 {
+    main section h1 {
         margin-bottom: 1vw;
         font-size: 2.5vw;
     }
@@ -618,7 +631,7 @@ aside .textDisplay {
     main section p {
         font-size: 1.3vw;
     }
-    main section h3 {
+    main section h1 {
         font-size: 1.7vw;
     }
     .center {
