@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-display: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Header with menu */
@@ -268,6 +269,7 @@ main section a {
 /* Footer */
 footer {
     background-image: linear-gradient(to right, lightblue, rgb(95, 130, 160) 70%);
+    font-display: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 2vh;
