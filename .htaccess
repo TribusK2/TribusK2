@@ -6,7 +6,7 @@ Deny from all
 
 RewriteEngine On
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteRule projektowanie-stron-internetowych index.html
 RewriteRule programista-krzysztof-rytlewski about.html
